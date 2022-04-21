@@ -2,26 +2,38 @@ main {
   text-align: justify;
 }
 header {
-  height: 15vh;
+  height: 10vh;
+  border-bottom: 1px solid grey;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 header section.up {
   height: 50%;
   margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+header section.up img {
+  height: 100%;
+  padding: 0.3rem;
 }
 header section.down {
   height: 50%;
 }
 header section.down ul {
   display: flex;
-  align-items: center;
   padding: 0;
+  height: 100%;
+  align-items: flex-end;
 }
 
 header section.down ul li {
   list-style-type: none;
   margin-left: 1.5rem;
   color: grey;
+}
+header section.down ul li:last-child {
+  border-bottom: 2px solid blue;
 }
 /* array special */
 

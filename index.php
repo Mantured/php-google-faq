@@ -78,7 +78,7 @@
 </head>
 <body>
     <header class="container-fluid">
-        <section class="up"> Logo Privacy e termini</section>
+        <section class="up"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Google_Logo_%281998%29.png" alt="98's logo google"> Privacy e termini</section>
         <section class="down">
             <ul>
                 <li>Introduzionw</li>
