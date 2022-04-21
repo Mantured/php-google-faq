@@ -1,3 +1,37 @@
 main {
   text-align: justify;
 }
+header {
+  height: 15vh;
+}
+
+header section.up {
+  height: 50%;
+  margin-left: 1.5rem;
+}
+header section.down {
+  height: 50%;
+}
+header section.down ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+header section.down ul li {
+  list-style-type: none;
+  margin-left: 1.5rem;
+  color: grey;
+}
+/* array special */
+
+.main-list {
+  margin-bottom: 5rem;
+}
+
+.main-list > li {
+  list-style-type: none;
+}
+.sub-list > li {
+  list-style-type: lower-alpha;
+}

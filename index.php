@@ -23,13 +23,13 @@
         ), */
 
         "Perché il mio account è associato a un paese?" => "
-        <ul>
+        <ul class=\"main-list\">
             <li>
                 <p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p>
                     <ol>
                         <li>
                         <p> La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</p>
-                            <ol>
+                            <ol class=\"sub-list\">
                                 <li>
                                 <p>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</p>
                                 </li>
@@ -47,8 +47,8 @@
                 <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>
             </li>
         </ul>
-        
-        <h4>Stabilire il paese associato al tuo account</h4> <p>Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.</p> <p>I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l'associazione del paese.</p><p>Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. Contattaci se ritieni che il paese associato al tuo account sia sbagliato.</p>
+
+        <h4>Stabilire il paese associato al tuo account</h4> <p>Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.</p> <p>I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l'associazione del paese.</p><p>Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"https://policies.google.com/country-association-contact-us\">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.</p>
         ",
         
         "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?" => " <p> I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. I motori di ricerca non possono rimuovere i contenuti direttamente dai siti web,quindi rimuovere risultati di ricerca da Google non consente di rimuovere i contenuti dal Web. Se desideri rimuovere qualcosa dal Web, devi <a href=\"https://support.google.com/websearch/answer/9109?hl=it\">contattare il webmaster</a> del sito su cui sono pubblicati i contenuti e chiedergli di apportare una modifica. Inoltre, se, ai sensi delle leggi europee per la protezione dei dati, desideri richiedere la rimozione di determinate informazioni su di te visualizzate nei risultati di ricerca di Google, <a href=\"https://support.google.com/legal/contact/lr_eudpa?product=websearch&hl=it\">fao clic qui</a>. Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l'aggiornamento, le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile <a href=\"https://support.google.com/websearch/troubleshooter/3111061?hl=it\"> visitare la nostra pagina di assistenza per avere ulteriori informazioni</a>.</p>",
@@ -77,12 +77,23 @@
     <title>Google FAQ</title>
 </head>
 <body>
-    <header></header>
+    <header class="container-fluid">
+        <section class="up"> Logo Privacy e termini</section>
+        <section class="down">
+            <ul>
+                <li>Introduzionw</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li>Domande frequenti</li>
+            </ul>
+        </section>
+    </header>
     <main class="container">
-        <section class="row">
-            <div class="col-12">
+        <section class="row justify-content-center">
+            <div class="col-7">
                 <?php  foreach ($faqs as $question => $answer){ ?>
-                    <h1><?php echo $question?></h1>
+                    <h3><?php echo $question?></h3>
                     <!-- <p><?php var_dump(explode('.', $answer))  ?></p> -->
                     <p><?php echo $answer ?></p>
                 <?php }; ?>
